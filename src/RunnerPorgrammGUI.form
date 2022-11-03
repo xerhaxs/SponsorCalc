@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="RunnerPorgrammGUI">
+  <grid id="27dc6" binding="panelMain" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="1405" height="415"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="84eab" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="4aa25" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Sign Up"/>
+            </properties>
+          </component>
+          <component id="c9e3f" class="javax.swing.JTextField" binding="nameTextField1">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+            </properties>
+          </component>
+          <component id="15298" class="javax.swing.JTextField" binding="maxMoneyTextField1">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="ca061" class="javax.swing.JTextField" binding="moneyPerRoundTextField1">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="c6d81" class="javax.swing.JButton" binding="signUpButton1">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Sign Up"/>
+            </properties>
+          </component>
+          <component id="91c78" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Name"/>
+            </properties>
+          </component>
+          <component id="1b3ca" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Max money"/>
+            </properties>
+          </component>
+          <component id="45e4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Money per round"/>
+            </properties>
+          </component>
+          <grid id="93ed3" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="8251c" class="javax.swing.JComboBox" binding="monthComboBox1">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="January"/>
+                    <item value="February"/>
+                    <item value="March"/>
+                    <item value="April"/>
+                    <item value="May"/>
+                    <item value="June"/>
+                    <item value="July"/>
+                    <item value="August"/>
+                    <item value="Spetember"/>
+                    <item value="October"/>
+                    <item value="November"/>
+                    <item value="December"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="c28d6" class="javax.swing.JComboBox" binding="yearComboBox1">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="2022"/>
+                    <item value="2021"/>
+                    <item value="2020"/>
+                    <item value="2019"/>
+                    <item value="2018"/>
+                    <item value="2017"/>
+                    <item value="2016"/>
+                    <item value="2015"/>
+                    <item value="2014"/>
+                    <item value="2013"/>
+                    <item value="2012"/>
+                    <item value="2011"/>
+                    <item value="2010"/>
+                    <item value="2009"/>
+                    <item value="2008"/>
+                    <item value="2007"/>
+                    <item value="2006"/>
+                    <item value="2005"/>
+                    <item value="2004"/>
+                    <item value="2003"/>
+                    <item value="2002"/>
+                    <item value="2001"/>
+                    <item value="2000"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="690b8" class="javax.swing.JComboBox" binding="dayComboBox1">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <maximumRowCount value="31"/>
+                  <model>
+                    <item value="01"/>
+                    <item value="02"/>
+                    <item value="03"/>
+                    <item value="04"/>
+                    <item value="05"/>
+                    <item value="06"/>
+                    <item value="07"/>
+                    <item value="08"/>
+                    <item value="09"/>
+                    <item value="10"/>
+                    <item value="11"/>
+                    <item value="12"/>
+                    <item value="13"/>
+                    <item value="14"/>
+                    <item value="15"/>
+                    <item value="16"/>
+                    <item value="17"/>
+                    <item value="18"/>
+                    <item value="19"/>
+                    <item value="20"/>
+                    <item value="21"/>
+                    <item value="22"/>
+                    <item value="23"/>
+                    <item value="24"/>
+                    <item value="25"/>
+                    <item value="26"/>
+                    <item value="27"/>
+                    <item value="28"/>
+                    <item value="29"/>
+                    <item value="30"/>
+                    <item value="31"/>
+                  </model>
+                </properties>
+                <clientProperties>
+                  <html.disable class="java.lang.Boolean" value="false"/>
+                </clientProperties>
+              </component>
+            </children>
+          </grid>
+          <component id="fd002" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Birthday"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="42a25" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="281c3" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Runners List"/>
+            </properties>
+          </component>
+          <component id="6f6ba" class="javax.swing.JTextArea" binding="runnerListTextArea1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <lineWrap value="false"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="7ac1c" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="54a62" class="javax.swing.JTextField" binding="nameTextField2">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="fac38" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Round Counter"/>
+            </properties>
+          </component>
+          <component id="9c8f" class="javax.swing.JButton" binding="addRoundButton1">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Add Round"/>
+            </properties>
+          </component>
+          <component id="f5d9f" class="javax.swing.JTextField" binding="roundTextField1">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties/>
+          </component>
+          <grid id="15d75" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="b8928" class="javax.swing.JComboBox" binding="yearComboBox2">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="2022"/>
+                    <item value="2021"/>
+                    <item value="2020"/>
+                    <item value="2019"/>
+                    <item value="2018"/>
+                    <item value="2017"/>
+                    <item value="2016"/>
+                    <item value="2015"/>
+                    <item value="2014"/>
+                    <item value="2013"/>
+                    <item value="2012"/>
+                    <item value="2011"/>
+                    <item value="2010"/>
+                    <item value="2009"/>
+                    <item value="2008"/>
+                    <item value="2007"/>
+                    <item value="2006"/>
+                    <item value="2005"/>
+                    <item value="2004"/>
+                    <item value="2003"/>
+                    <item value="2002"/>
+                    <item value="2001"/>
+                    <item value="2000"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="3444d" class="javax.swing.JComboBox" binding="monthComboBox2">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="January"/>
+                    <item value="February"/>
+                    <item value="March"/>
+                    <item value="April"/>
+                    <item value="May"/>
+                    <item value="June"/>
+                    <item value="July"/>
+                    <item value="August"/>
+                    <item value="Spetember"/>
+                    <item value="October"/>
+                    <item value="November"/>
+                    <item value="December"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="9b403" class="javax.swing.JComboBox" binding="dayComboBox2">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <maximumRowCount value="31"/>
+                  <model>
+                    <item value="01"/>
+                    <item value="02"/>
+                    <item value="03"/>
+                    <item value="04"/>
+                    <item value="05"/>
+                    <item value="06"/>
+                    <item value="07"/>
+                    <item value="08"/>
+                    <item value="09"/>
+                    <item value="10"/>
+                    <item value="11"/>
+                    <item value="12"/>
+                    <item value="13"/>
+                    <item value="14"/>
+                    <item value="15"/>
+                    <item value="16"/>
+                    <item value="17"/>
+                    <item value="18"/>
+                    <item value="19"/>
+                    <item value="20"/>
+                    <item value="21"/>
+                    <item value="22"/>
+                    <item value="23"/>
+                    <item value="24"/>
+                    <item value="25"/>
+                    <item value="26"/>
+                    <item value="27"/>
+                    <item value="28"/>
+                    <item value="29"/>
+                    <item value="30"/>
+                    <item value="31"/>
+                  </model>
+                </properties>
+                <clientProperties>
+                  <html.disable class="java.lang.Boolean" value="false"/>
+                </clientProperties>
+              </component>
+            </children>
+          </grid>
+          <component id="add62" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Name"/>
+            </properties>
+          </component>
+          <component id="ee9e7" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Birthday"/>
+            </properties>
+          </component>
+          <component id="2830b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Add Round X"/>
+            </properties>
+          </component>
+          <component id="91300" class="javax.swing.JButton" binding="getBestRunnerButton1">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Best Runner"/>
+            </properties>
+          </component>
+          <hspacer id="a6bda">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+      <grid id="70452" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f0227" class="javax.swing.JButton" binding="addRunnersButton1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add Runners"/>
+            </properties>
+          </component>
+          <component id="d4753" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Debug Menu"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
