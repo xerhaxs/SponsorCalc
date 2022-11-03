@@ -5,7 +5,6 @@ import java.awt.event.ActionListener;
 
 public class RunnerPorgrammGUI {
     public JPanel panelMain;
-    private JList runnerListJList;
     private JTextField nameTextField1;
     private JTextField maxMoneyTextField1;
     private JTextField moneyPerRoundTextField1;
@@ -22,7 +21,6 @@ public class RunnerPorgrammGUI {
     private JButton getBestRunnerButton1;
     private JButton addRunnersButton1;
     private JTextArea runnerListTextArea1;
-    private JTable table1;
 
     public RunnerPorgrammGUI() {
 
