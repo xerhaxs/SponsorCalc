@@ -52,9 +52,11 @@ public class RunnerPorgrammGUI {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 RunnerList.addRunner("Adolf", "2000-January-01", 100, 5);
-                runnerListTextArea1.setText(runnerListTextArea1.getText() + "Stalin\n");
+                runnerListTextArea1.setText(runnerListTextArea1.getText() + "Adolf\n");
+                RunnerList.getRunner("Adolf" + "2000-January-01").run(10);
                 RunnerList.addRunner("Stalin", "2001-January-01", 200, 20);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Stalin\n");
+                RunnerList.getRunner("Stalin" + "2001-January-01").run(10);
                 RunnerList.addRunner("Mao", "2022-January-01", 150, 15);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Mao\n");
                 RunnerList.addRunner("Wilhelm", "2005-January-01", 300, 5);

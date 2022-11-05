@@ -26,7 +26,7 @@ public class RunnerList {
         RunnerList.remove(pIdent);
     }
 
-    public Runner getBestRunner() {
+    public TreeMap<String, Runner> getBestRunner() {
         TreeMap<String, Runner> BestRunnerList = new TreeMap<>();
         for (Map.Entry<String, Runner> entry : RunnerList.entrySet()) {
             if (BestRunnerList.isEmpty()) {
@@ -39,7 +39,7 @@ public class RunnerList {
             }
         }
         System.out.println(BestRunnerList);
-        return (Runner) BestRunnerList.firstEntry();
+        return BestRunnerList;
     }
 
 //    public void getCompleteRunner() {
