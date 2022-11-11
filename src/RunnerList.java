@@ -1,10 +1,9 @@
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class RunnerList {
 
-    HashMap<String, Runner> RunnerList = new HashMap<>();
+    TreeMap<String, Runner> RunnerList = new TreeMap<>();
 
     public RunnerList() {
     }
@@ -21,12 +20,11 @@ public class RunnerList {
     public Runner getRunner(String pIdent) {
         return RunnerList.get(pIdent);
     }
-
     public void delRunner(String pIdent) {
         RunnerList.remove(pIdent);
     }
 
-    public TreeMap<String, Runner> getBestRunner() {
+    public Runner getBestRunner() {
         TreeMap<String, Runner> BestRunnerList = new TreeMap<>();
         for (Map.Entry<String, Runner> entry : RunnerList.entrySet()) {
             if (BestRunnerList.isEmpty()) {
@@ -38,12 +36,18 @@ public class RunnerList {
                 BestRunnerList.put(entry.getValue().getName() + entry.getValue().getBirthday(), entry.getValue());
             }
         }
-        System.out.println(BestRunnerList);
-        return BestRunnerList;
+        //System.out.println(BestRunnerList);
+        return BestRunnerList.firstEntry().getValue();
     }
 
-//    public void getCompleteRunner() {
-//        for int pLoop
-//        RunnerList.keySet()
-//    }
+    public TreeMap<String, Runner> getSortedRunnerList() {
+        TreeMap<String, Runner> lSortedRunnerList = new TreeMap<>();
+        while (!RunnerList.isEmpty()) {
+            lSortedRunnerList.put(this.getBestRunner().getName() + this.getBestRunner().getBirthday(), this.getBestRunner());
+            RunnerList.remove(this.getBestRunner().getName() + this.getBestRunner().getBirthday(), this.getBestRunner());
+        }
+        RunnerList = lSortedRunnerList;
+        System.out.println(RunnerList);
+        return RunnerList;
+    }
 }

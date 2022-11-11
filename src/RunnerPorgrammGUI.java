@@ -21,6 +21,7 @@ public class RunnerPorgrammGUI {
     private JButton getBestRunnerButton1;
     private JButton addRunnersButton1;
     private JTextArea runnerListTextArea1;
+    private JButton sortRunnersButton1;
 
     public RunnerPorgrammGUI() {
 
@@ -42,18 +43,20 @@ public class RunnerPorgrammGUI {
                 RunnerList.getRunner(nameTextField2.getText() + String.valueOf(yearComboBox2.getSelectedItem()) + ("-") + monthComboBox2.getSelectedItem() + ("-") + dayComboBox2.getSelectedItem()).getRunnerData();
             }
         });
+
         getBestRunnerButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 RunnerList.getBestRunner();
             }
         });
+
         addRunnersButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 RunnerList.addRunner("Adolf", "2000-January-01", 100, 5);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Adolf\n");
-                RunnerList.getRunner("Adolf" + "2000-January-01").run(10);
+                RunnerList.getRunner("Adolf" + "2000-January-01").run(25);
                 RunnerList.addRunner("Stalin", "2001-January-01", 200, 20);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Stalin\n");
                 RunnerList.getRunner("Stalin" + "2001-January-01").run(10);
@@ -71,6 +74,12 @@ public class RunnerPorgrammGUI {
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Friedrich\n");
                 RunnerList.addRunner("Caesar", "2005-January-01", 75, 3);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Caesar\n");
+            }
+        });
+        sortRunnersButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                RunnerList.getSortedRunnerList();
             }
         });
     }
@@ -491,7 +500,7 @@ public class RunnerPorgrammGUI {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         panel4.add(spacer1, gbc);
         final JPanel panel6 = new JPanel();
-        panel6.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(2, 1, new Insets(0, 0, 0, 0), -1, -1));
+        panel6.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(3, 1, new Insets(0, 0, 0, 0), -1, -1));
         gbc = new GridBagConstraints();
         gbc.gridx = 3;
         gbc.gridy = 0;
@@ -503,6 +512,9 @@ public class RunnerPorgrammGUI {
         final JLabel label11 = new JLabel();
         label11.setText("Debug Menu");
         panel6.add(label11, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        sortRunnersButton1 = new JButton();
+        sortRunnersButton1.setText("Sort Runners");
+        panel6.add(sortRunnersButton1, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
     /**
