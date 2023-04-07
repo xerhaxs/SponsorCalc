@@ -18,7 +18,7 @@ public class RunnerPorgrammGUI {
     private JComboBox yearComboBox2;
     private JComboBox monthComboBox2;
     private JComboBox dayComboBox2;
-    private JButton getBestRunnerButton1;
+    private JButton getFirstRunnerButton1;
     private JButton addRunnersButton1;
     private JTextArea runnerListTextArea1;
     private JButton sortRunnersButton1;
@@ -44,10 +44,10 @@ public class RunnerPorgrammGUI {
             }
         });
 
-        getBestRunnerButton1.addActionListener(new ActionListener() {
+        getFirstRunnerButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                RunnerList.getBestRunner();
+                RunnerList.getFirstRunner();
             }
         });
 
@@ -57,29 +57,46 @@ public class RunnerPorgrammGUI {
                 RunnerList.addRunner("Adolf", "2000-January-01", 100, 5);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Adolf\n");
                 RunnerList.getRunner("Adolf" + "2000-January-01").run(25);
+
                 RunnerList.addRunner("Stalin", "2001-January-01", 200, 20);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Stalin\n");
                 RunnerList.getRunner("Stalin" + "2001-January-01").run(10);
+
                 RunnerList.addRunner("Mao", "2022-January-01", 150, 15);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Mao\n");
+                RunnerList.getRunner("Mao" + "2022-January-01").run(100);
+
                 RunnerList.addRunner("Wilhelm", "2005-January-01", 300, 5);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Wilhelm\n");
+                RunnerList.getRunner("Mao" + "2022-January-01").run(7);
+
                 RunnerList.addRunner("Karl", "2006-January-01", 110, 2);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Karl\n");
+                RunnerList.getRunner("Mao" + "2022-January-01").run(26);
+
                 RunnerList.addRunner("Marx", "2004-January-01", 80, 8);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Marx\n");
+                RunnerList.getRunner("Mao" + "2022-January-01").run(15);
+
                 RunnerList.addRunner("Bismarck", "2003-January-01", 20, 12);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Bismarck\n");
+                RunnerList.getRunner("Mao" + "2022-January-01").run(8);
+
                 RunnerList.addRunner("Friedrich", "2002-January-01", 50, 16);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Friedrich\n");
+                RunnerList.getRunner("Mao" + "2022-January-01").run(5);
+
                 RunnerList.addRunner("Caesar", "2005-January-01", 75, 3);
                 runnerListTextArea1.setText(runnerListTextArea1.getText() + "Caesar\n");
+                RunnerList.getRunner("Mao" + "2022-January-01").run(25);
             }
         });
         sortRunnersButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                RunnerList.getSortedRunnerList();
+                //RunnerList.getSortedRunnerListSelection();
+                RunnerList.getSortedRunnerListInsert();
+                runnerListTextArea1.setText(RunnerList.getRunnerNames());
             }
         });
     }
@@ -486,13 +503,13 @@ public class RunnerPorgrammGUI {
         gbc.weighty = 1.0;
         gbc.anchor = GridBagConstraints.WEST;
         panel4.add(label10, gbc);
-        getBestRunnerButton1 = new JButton();
-        getBestRunnerButton1.setText("Best Runner");
+        getFirstRunnerButton1 = new JButton();
+        getFirstRunnerButton1.setText("First Runner");
         gbc = new GridBagConstraints();
         gbc.gridx = 1;
         gbc.gridy = 6;
         gbc.fill = GridBagConstraints.HORIZONTAL;
-        panel4.add(getBestRunnerButton1, gbc);
+        panel4.add(getFirstRunnerButton1, gbc);
         final JPanel spacer1 = new JPanel();
         gbc = new GridBagConstraints();
         gbc.gridx = 1;
